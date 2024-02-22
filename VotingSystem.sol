@@ -25,7 +25,7 @@ contract VotingSystem {
       * Modifier: Only registered voters can call this function
       */
       modifier onlyVoter() {
-        require(mvoters[msg.sender], "Only a registered voter can call this function");
+        require(voters[msg.sender], "Only a registered voter can call this function");
         _;
       }
 
@@ -36,7 +36,27 @@ contract VotingSystem {
         require(votingOpen, "Voting window is over.");
         _;
        }
-       
+
+       /**
+        * Initialize contract, developer is set to admin and voting is set to open.
+        */
+        constructor() {
+            admin = msg.sender;
+            votingOpen = true;
+        }
+
+        /**
+         * Admin can register voters.
+         * Voter address is registered.
+         */
+         function registerVoter(address _voter) external onlyAdmin {
+            require(!voters[_voter], "Voter already registered"); //prevent previously registered voters from voting again.
+            voters[_voter] = true;
+            emit VoterRegistered(_voter);
+        }
+
+        
+
 
 
 }
