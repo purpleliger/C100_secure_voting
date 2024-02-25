@@ -1,12 +1,12 @@
 # C100_secure_voting
-<br>
+<br />
 A secure voting system utilizing smart contracts.
-<br>
-<br>
-## Functionality:
-<br>
+<br />
+<br />
+<h3> Functionality: </h3> 
+<br />
 - Admin access to open voting period
-<br>
+<br />
 - Admin access to close voting period
-<br>
+<br />
 - Vote count for a candidate based on voter address
