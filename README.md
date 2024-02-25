@@ -3,7 +3,7 @@
 A secure voting system utilizing smart contracts.
 <br>
 <br>
-### Functionality:
+## Functionality:
 <br>
 - Admin access to open voting period
 <br>
