@@ -3,5 +3,5 @@
     "namespace": "Solidity.Samples",
     "lang":0,
     "autoCodeGen":true,
-    "projectPath": "../SoliditySamples"
+    "projectPath": "../C100_secure_voting"
 }
