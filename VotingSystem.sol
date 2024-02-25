@@ -66,7 +66,7 @@ contract VotingSystem {
     /**
      * Allow admin to close voting by setting the boolean votingOpen variable to false.
      */
-    function closeVoting();() external onlyAdmin {
+    function closeVoting() external onlyAdmin {
       votingOpen = false;
       emit VotingClosed();
     }
